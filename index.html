@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Chandel - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="bg-container">
+      <div class="bg-gradient"></div>
+      <div class="grid-overlay"></div>
+      <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+      </div>
+    </div>
+
+    <nav id="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">SC</div>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">SHIVAM CHANDEL</h1>
+          <p class="hero-subtitle">Full Stack Developer</p>
+          <p class="hero-description">
+            Architecting digital experiences with cutting-edge technologies.
+            Transforming complex problems into elegant, scalable solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="#projects" class="btn btn-secondary">View Work</a>
+            <a href="#" id="downloadResume" class="btn btn-secondary">Download Resume</a>
+          </div>
+        </div>
+        <div class="scroll-indicator"></div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Arsenal</div>
+          <h2 class="section-title">TECH STACK</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skills-container">
+          <div class="skill-card"><div class="skill-icon">⚛️</div><div class="skill-name">React</div></div>
+          <div class="skill-card"><div class="skill-icon">🟢</div><div class="skill-name">Node.js</div></div>
+          <div class="skill-card"><div class="skill-icon">🍃</div><div class="skill-name">MongoDB</div></div>
+          <div class="skill-card"><div class="skill-icon">☕</div><div class="skill-name">Java</div></div>
+          <div class="skill-card"><div class="skill-icon">☁️</div><div class="skill-name">AWS</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">FEATURED WORK</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Background</div>
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="education-card">
+          <h3 class="degree">Bachelor of Technology</h3>
+          <p class="course">Computer Science & Business Systems (CSBS)</p>
+          <p class="college">Sagar Institute of Research & Technology, Bhopal</p>
+          <p class="year">2023 - 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Connect</div>
+          <h2 class="section-title">GET IN TOUCH</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" required />
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="projects-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
