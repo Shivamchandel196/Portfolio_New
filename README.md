@@ -5,7 +5,7 @@ This is my personal portfolio website showcasing my projects, skills, and contac
 
 🚀 Live Demo
 
-🔗 https://your-portfolio-link-here
+🔗 https://shivamchandel196.github.io/Portfolio_New/
 
 ✨ Features
 
@@ -29,7 +29,7 @@ JavaScript
 
 📸 Preview
 
-
+![Portfolio Preview](preview.png)
 
 📬 Connect With Me
 
